@@ -6,6 +6,7 @@
   </head>
   <body>
    <header class="main-header">
+     <div class="main-header-box">
      <nav class="main-navigation">
        <ul class="site-navigation">
          <li><a href="info.html">Информация</a></li>
@@ -14,29 +15,51 @@
          <li><a href="hotels.html">Гостиницы</a></li>
        </ul>
      </nav>
-     <img src="img/logo-sedona.svg" alt="Sedona logo" width="135px" height="70px">
+       <img src="img/logo-sedona.svg" alt="Sedona logo" width="135px" height="70px">
+     </div>
    </header>
    <main>
      <section class="main-banner">
-       <h1 class="visually-hidden">Sedona</h1>
-         <p> <img src="img/intro-welcome.svg" alt="welcome"></span>
+       <h1 class="visually-hidden">Город Sedona</h1>
+         <p> <img src="img/intro-welcome.svg" alt="welcome">
          </p>
        <b>Седона - небольшой городок в Аризоне, заслуживающий большего!</b>
        <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
-	 </section>
+	   </section>
      <section class="reasons">
      <!--причины-->
      </section>
-	 <section class="block-callback">
-       <p class="bold">Заинтересовались?</p>
-       <p>Укажите предполагаемые даты поездки,<br>
+	   <section class="block-callback">
+       <h2>Заинтересовались?</h2>
+       <p class="block-callback-info">Укажите предполагаемые даты поездки,<br>
  	   и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-	 </section>
-     <section class="search-form">
-       <button type="button">Поиск гостиницы в Седоне</button>
-	   <!--тут будет форма поиска-->
+     <div class="search">
+       <button class="button" type="button">Поиск гостиницы в Седоне</button>
+	       <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+           <p class="search-form-item">
+            <label for="date-from">Дата заезда:</label>
+            <input id="date-from" type="text" name="date-from" value="" placeholder="24 апреля 2017">
+            <span class="calendar"><img src="img/calendar.svg" alt="calendar"></span>
+           </p>
+           <p class="search-form-item">
+             <label for="date-to">Дата выезда:</label>
+             <input id="date-to" type="text" name="date-to" value="" placeholder="4 июля 2017">
+             <span class="calendar"><img src="img/calendar.svg" alt="calendar"></span>
+           </p>
+           <p class="search-form-item"> 
+             <label for="adult">Взрослые:</label>
+             <input id="adult" type="text" name="adult" value="" placeholder="2">
+           </p>
+           <p class="search-form-item">
+             <label for="children">Дети:</label>
+             <input id="children" type="text" name="children" value="" placeholder="0">
+           </p>
+           <button class="button" type="submit">Найти</button>
+         </form>
      </section>
-     <section class="map"><img src="img/map.jpg" alt="map" width="1200px" height="593px"></section>
+     <section class="map">
+       <img src="img/map.jpg" alt="map of Sedona" width="1200px" height="593px">
+     </section>
    </main>
    <footer class="main-footer">
      <p class="hashtag">#VISITSEDONA</p>
