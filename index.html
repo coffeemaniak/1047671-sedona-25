@@ -2,6 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Седона</title>
   </head>
   <body>
@@ -21,13 +24,65 @@
    <main>
      <section class="main-banner">
        <h1 class="visually-hidden">Город Sedona</h1>
-         <p> <img src="img/intro-welcome.svg" alt="welcome">
-         </p>
-       <b>Седона - небольшой городок в Аризоне, заслуживающий большего!</b>
+         <img src="img/intro-welcome.svg" alt="welcome" width="459px" height="353px">
+         <img src="img/polygon.svg" width="1201px" height="59px"> 
+      </section>
+      <section  class="introduse">     
+       <p class="bold">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
        <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
 	   </section>
      <section class="reasons">
-     <!--причины-->
+       <div class="reason-one">
+         <div class="reason-one-text">
+         <p class="bold">Настоящий городок</p>
+         <p>- № 1 - 
+         Седона - не аттракцион для туристов, 
+         там течет своя жизнь
+         </p>
+         </div>
+         <img src="img/Layer_10.jpg" width="800px" height="256px" alt="city photo">
+        </div>
+        <div class="recomends">
+          <div class="recomends-one">
+          <img src="img/icon-1.svg" width="75px" height="72px" alt="house">
+          <p class="bold">Жилье</p>
+          <p>Рекомендуем пожить в настоящем 
+          мотеле, все как в кино!</p>
+          </div>
+          <div class="recomends-two">
+          <img src="img/icon-2.svg" width="74px" height="70px" alt="burger">
+          <p class="bold">Еда<p>
+          <p>Всегда заказывайте фирменный бургер,
+          вы не разочаруетесь!</p>
+          </div>
+          <div class="recomends-three">
+          <img src="img/icon-3.svg" width="64px" height="76px" alt="souveners">
+          <p class="bold">Сувениры</p>
+          <p>Не только китайского, но и местного
+          производства!</p>
+          </div>
+        </div>
+        <div class="reasons-two">
+          <img src="img/Layer_5.jpg" width="800px" height="256px" alt="Devil's bridge">
+          <div class="reason-two-text">
+          <p class="bold">Там есть мост дьявола</p>
+          <p>- № 2 -
+          По нему можно пройти! Если, конечно
+          вы осмелитесь
+          </p>
+          </div>
+        </div>
+        <div class="reasons-list">
+        <span class="bold">Небольшая площадь</span>
+        - № 3 -
+        Все достопримечательности находятся очень близко
+        <span class="bold">Красивая дорога</span>
+        - № 4 -
+        Ехать в Седону из Лас-Вегаса совсем не скучно!
+        <span class="bold">Мало туристов</span>
+        - № 5 -
+        Большинство едет в Гранд-Каньон и толпится там
+        </div>
      </section>
 	   <section class="block-callback">
        <h2>Заинтересовались?</h2>
@@ -54,7 +109,7 @@
              <label for="children">Дети:</label>
              <input id="children" type="text" name="children" value="" placeholder="0">
            </p>
-           <button class="button" type="submit">Найти</button>
+           <button class="button-search" type="submit">Найти</button>
          </form>
      </section>
      <section class="map">
@@ -62,7 +117,7 @@
      </section>
    </main>
    <footer class="main-footer">
-     <p class="hashtag">#VISITSEDONA</p>
+     <p class="bold">#VISITSEDONA</p>
        <ul class="footer-social">
          <li><a class="social-button" href="#">Twitter</a></li>
          <li><a class="social-button" href="#">Facebook</a></li>
@@ -70,7 +125,7 @@
        </ul>
        <p>Website by 
 	     <a class="academy-logo" href="https://htmlacademy.ru/intensive/htmlcss">
-		   <img src="img/academy-logo.svg" width="31px" height="40px" alt="HTML Academy">HTML Academy</a>
+		   <img src="img/logo-htmlacademy.svg" width="115px" height="41px" alt="HTML Academy"></a>
 	   </p>
    </footer>
   </body>
