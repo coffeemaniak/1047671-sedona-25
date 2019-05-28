@@ -16,15 +16,39 @@ background-color: #ffffff;
 a {
   text-decoration: none;
 }
+.main-header-box {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  width: 135px;
+  background-color: transparent;
+}
+
 .main-navigation {
+  
   font-size: 14px;
   font-weight: bold;
   line-height: 26px;
   color: #000000;
   background-color: #ffffff;
+  
+  display: flex;
+  width: 1200px;
+  align-items: center;
+ 
 }
 .site-navigation {
   list-style: none;
+  justify-content: space-between;
+  margin: auto;
+  width: 1056px;
+ justify-content: space-between;
+  
+}
+.main-navigation-wrapper{
+  width: 100%;
+  background-color: #ffffff;
 }
 .site-navigation a {
   color: #000000;
@@ -40,29 +64,97 @@ h2.visually-hidden  {
   display: none;
 }
 .main-banner img {
-  display: block;
-  margin: -78px auto;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 0;
 }
 .bold {
   font-size: 21px;
   font-weight: bold;
+  line-height: 26px;
+  margin-bottom: 25px;
 }
 .introduse {
   display: block;
   background-color: #ffffff;
-  width: 1200px;
-  height: 216px;
   position: center;
   text-align: center;
 }
-.reason-one-text {
-  display: block;
+
+.reason-one {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  width: 1200px;
+  margin-bottom: 60px;
+}
+.reason-two {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  width: 1200px;
+  
+}
+.reason-one-text,
+.reason-two-text {
   width: 400px;
   height: 256px;
   background-color: #81b3d2;
   color: #ffffff;
   text-align: center;
   vertical-align: middle;
+}
+
+  
+.recomends {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 80px;
+  width: 1200px;
+  
+}
+.recomends-one,
+.recomends-two,
+.recomends-three {
+  text-align: center;
+}
+.reasons-list {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  background-color: #eeeeee;
+  min-height: 254px;
+  margin: auto;
+  align-items: center;
+}
+.reasons-list-item {
+  width: 280px;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 40px;
+  
+}
+
+.block-callback p,
+.block-callback h2{
+  text-align: center;
+  vertical-align: middle;
+}
+.block-callback h2 {
+  margin-top: 55px;
+  margin-bottom: 35px;
+}
+.block-callback p {
+  margin-bottom: 50px;
+}
+.search {
+  width: 575px;
+  height: 480px;
+  background-color: #ffffff;
+  margin: auto;
 }
 .button {
   font: inherit;
@@ -84,6 +176,7 @@ h2.visually-hidden  {
   background-color: #503e33;
   color: #928a85;
 }
+
 .search-form-item input{
   background-color: #f2f2f2;
 }
@@ -120,11 +213,26 @@ h2.visually-hidden  {
   color: #ffffff;
   border: none;
 }
+.main-footer .container {
+  display: flex;
+}
 .footer-social {
   text-align: center;
+  width: 155px;
 }
 ul.footer-social {
   list-style: none;
+}
+.hashtag {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+  width: 140px;
+  margin-left: 125px;
+}
+.footer-copyright {
+  width: 240px;
+  margin-left: 250px;
 }
 img.academy-logo:hover {
   background-color: #81b3d2;
@@ -135,12 +243,54 @@ img.academy-logo:active {
 .inner-page {
   background-color: #fefefe;
   background-image: url("../img/inner-page.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
 }
 .filtres {
   background-image: url("../img/filter_background.jpg");
+  background-size: 1200px 218px;
   background-repeat: no-repeat;
   background-position: top center;
   background-color: #ffffff;
+/*
+  display: flex;
+  justify-content: space-between;
+  */
+}
+.filtres ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+.filtres-column {
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+}
+.staff {
+  width: 240px;  
+  margin-left: 110px;
+}
+.hotel-type {
+  width: 240px;
+}
+.range {
+  width: 600px;
+}
+
+.result {
+  display: flex;
+  flex-wrap: no-wrap;
   width: 1200px;
-  height: 800px;
+  margin: auto;
+}
+.hotels-item {
+  display: flex;
+  justify-content: space-between;
+  width: 1056px;
 }
