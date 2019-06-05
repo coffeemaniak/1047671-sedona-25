@@ -92,7 +92,8 @@ ul.navigation-list  {
 }
 h1.visually-hidden,
 h2.visually-hidden,
-span.visually-hidden  {
+span.visually-hidden,
+input[type="checkbox"].visually-hidden  {
   position: absolute;
 
   width: 1px;
@@ -200,10 +201,13 @@ span.visually-hidden  {
   margin-bottom: 50px;
 }
 .search {
+  z-index: 10;
   width: 575px;
-  height: 480px;
+  height: 484px;
   background-color: #ffffff;
   margin: auto;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.7);
+  
 }
 .button {
   font: inherit;
@@ -212,7 +216,7 @@ span.visually-hidden  {
   text-align: center;
   vertical-align: middle;
   border: none;
-  width: 568px;
+  width: 575px;
   height: 86px;
   text-transform: uppercase;
   font-size: 21px;
@@ -226,14 +230,63 @@ span.visually-hidden  {
   color: #928a85;
 }
 
-.search-form-item input{
-  background-color: #f2f2f2;
+.search-form-item{
+  position: relative;
+  font: inherit;
+  font-size: 14px;
+  font-weight: bold;
 }
 .search-form-item input:hover {
   background-color: #ebebeb;
 }
 .search-form-item input:focus {
   background-color: #ffffff;
+}
+.search-form-item input[type="text"] {
+  width: 347px;
+  box-sizing: border-box;
+  padding: 10px 15px;
+  padding-right: 30px;
+  font: inherit;
+  color: #000000;
+  text-transform: uppercase;
+  background-color: #f2f2f2;
+  border: none;
+  position: relative;
+}
+.calendar {
+  position: absolute;
+  left: 470px;
+  top: 10px;
+  border: none;
+  background-color: #f2f2f2;
+}
+.count {
+  display: flex;
+  width: 465px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.count-form-item label {
+  font-size: 14px;
+  font-weight: bold;
+  display: inline-block;
+}
+.count-form-item label:first-child {
+  margin-right: 25px;
+}
+
+.count-form-item input[type="text"] {
+  width: 116px;
+  box-sizing: border-box;
+  padding: 10px 40px;
+  font: inherit;
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
+  background-color: #f2f2f2;
+  border: none;
+  position: relative;
 }
 .button-search {
   font: inherit;
@@ -247,6 +300,7 @@ span.visually-hidden  {
   background-color: #81b3d2;
   color: #ffffff;
   border: none;
+  margin-left: 56px;
 }
 .button-search:hover,
 .social-button:hover {
@@ -256,6 +310,11 @@ span.visually-hidden  {
 .social-button:active {
   background-color: #5496bd;
   color: #94b9d2;
+}
+.map {
+  display: block;
+  width: 1200px;
+  height: 593px;
 }
 .social-button {
   background-color: #81b3d2;
@@ -374,6 +433,22 @@ fieldset {
 }
 .filter-options {
   padding-top: 20px;
+}
+.hotel {
+  position: relative;
+
+  padding-left: 30px;
+
+  cursor: pointer;
+}
+.hotel input[type="checkbox"] + .checkbox-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 29px;
+  height: 27px;
+
 }
 .range {
   width: 330px;
@@ -535,16 +610,99 @@ fieldset {
 .hotels-item {
   display: flex;
   justify-content: space-between;
-  width: 1056px;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 28px 73px;
+  box-sizing: border-box;
+  border-top: 2px solid #e5e5e5;
+}
+.hotels-item:last-child {
+  border-bottom: 2px solid #e5e5e5;
+  margin-bottom: 35px;
 }
 .hotels-item-left {
   margin-right: 26px;
   margin-left: 0;
 }
 .hotel-item-center {
-  width: 266px;
+  width: 350px;
+}
+.hotel-item-center .bold {
+  color: #000000;
+}
+.hotel-item-center p {
+ padding: 0;
+ margin: 0;
+}
+.type,
+.price {
+  display: inline-block;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  padding-right: 40px;
+  width: 114px;
+}
+.button-more,
+.button-booking {
+ display: inline-block;
+ 
+}
+.button-more {
+ display: inline-block;
+  margin-right: 7px;
+ padding: 7px 16px;
+  width: 112px;
+  box-sizing: content-box;
+  font: inherit;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #81b3d2;
+  border: none;
+}
+.button-booking {
+  display: inline-block;
+  
+  padding: 7px 16px;
+  width: 144px;
+  
+  font: inherit;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #766357;
+  border: none;
+}
+.button-more a,
+.button-booking a {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+}
+.button-more:hover {
+  background-color: #669ec0;
+}
+.button-more:active {
+  background-color: #5496bd;
+  color: #88b6d1;
+}
+.button-booking:hover {
+  background-color: #604e43;
+}
+.button-booking:active {
+  background-color: #503e33;
+  color: #857871;
 }
 .hotels-item-right {
   width: 116px;
   margin-left: auto;
+  padding-right: 73px;
 }
