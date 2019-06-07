@@ -33,10 +33,11 @@
      <section class="main-banner">
        <h1 class="visually-hidden">Город Sedona</h1>
          <img src="img/intro-welcome.svg" alt="welcome" width="459px" height="353px">
-         <img src="img/polygon.svg" width="1201px" height="59px"> 
+        <!-- <img src="img/polygon.svg" width="1201px" height="59px"> -->
       </section>
       <section  class="introduse">     
-       <p class="bold">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
+       <p class="bold">Седона - небольшой городок в Аризоне,<br>
+       заслуживающий большего!</p>
        <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
 	   </section>
      <section class="reasons">
@@ -110,22 +111,22 @@
 	       <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
            <p class="search-form-item">
             <label for="date-from">Дата заезда:</label>
-            <input id="date-from" type="text" name="date-from" value="" placeholder="24 апреля 2017">
+            <input id="date-from" type="text" name="date-from" value="" placeholder="24 апреля 2017" class="date-input">
             <button class="calendar"><img src="img/calendar.svg" alt="calendar"></button>
            </p>
            <p class="search-form-item">
              <label for="date-to">Дата выезда:</label>
-             <input id="date-to" type="text" name="date-to" value="" placeholder="4 июля 2017">
+             <input id="date-to" type="text" name="date-to" value="" placeholder="4 июля 2017" class="date-input">
              <button class="calendar"><img src="img/calendar.svg" alt="calendar"></button>
            </p>
            <div class="count">
            <p class="count-form-item"> 
              <label for="adult">Взрослые:</label>
-             <input id="adult" type="text" name="adult" value="" placeholder="2">
+             <input id="adult" type="text" name="adult" value="" placeholder="2" class="adult-count">
            </p>
            <p class="count-form-item">
              <label for="children">Дети:</label>
-             <input id="children" type="text" name="children" value="" placeholder="0">
+             <input id="children" type="text" name="children" value="" placeholder="0" class="children-count">
            </p>
            </div>
            <button class="button-search" type="submit">Найти</button>

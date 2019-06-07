@@ -91,9 +91,7 @@ ul.navigation-list  {
   color: #cacaca;
 }
 h1.visually-hidden,
-h2.visually-hidden,
-span.visually-hidden,
-input[type="checkbox"].visually-hidden  {
+h2.visually-hidden  {
   position: absolute;
 
   width: 1px;
@@ -115,6 +113,19 @@ input[type="checkbox"].visually-hidden  {
   margin-left: auto;
   margin-top: 0;
 }
+.main-banner {
+  position: relative;
+}
+/*.main-banner:after {
+  content: "";
+  position: absolute;
+  display: block;
+  background-image: url("../img/polygon.png");
+  background-repeat: no-repeat;
+  background-size: 1200px 59px;
+  z-index: 10;
+  top: 448px;
+}*/
 .bold {
   font-size: 21px;
   font-weight: bold;
@@ -126,10 +137,24 @@ input[type="checkbox"].visually-hidden  {
   width: 1200px;
 }
 .introduse {
-  display: block;
+  display:flex;
+  flex-direction: column;
   background-color: #ffffff;
-  position: center;
   text-align: center;
+  margin-top: 60px;
+  padding-top: 60px;
+}
+.introduse:before {
+  content: "";
+  position: absolute;
+  display: block;
+  background-image: url("../img/polygon.png");
+  background-repeat: no-repeat;
+  width: 1201px;
+  height: 59px;
+  z-index: 10;
+  top: 516px;
+
 }
 
 .reason-one {
@@ -203,11 +228,17 @@ input[type="checkbox"].visually-hidden  {
 .search {
   z-index: 10;
   width: 575px;
-  height: 484px;
-  background-color: #ffffff;
+  position: relative;
   margin: auto;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.7);
   
+}
+.search-form {
+  width: 575px;
+  position: absolute;
+  top: 86px;
+  background-color: #ffffff;
+  padding: 30px;
+  box-sizing: border-box;
 }
 .button {
   font: inherit;
@@ -221,6 +252,7 @@ input[type="checkbox"].visually-hidden  {
   text-transform: uppercase;
   font-size: 21px;
   font-weight: bold;
+  cursor: pointer;
 }
 .button:hover {
   background-color: #604e43;
@@ -242,7 +274,7 @@ input[type="checkbox"].visually-hidden  {
 .search-form-item input:focus {
   background-color: #ffffff;
 }
-.search-form-item input[type="text"] {
+.date-input {
   width: 347px;
   box-sizing: border-box;
   padding: 10px 15px;
@@ -256,7 +288,7 @@ input[type="checkbox"].visually-hidden  {
 }
 .calendar {
   position: absolute;
-  left: 470px;
+  right: 31px;
   top: 10px;
   border: none;
   background-color: #f2f2f2;
@@ -276,14 +308,18 @@ input[type="checkbox"].visually-hidden  {
   margin-right: 25px;
 }
 
-.count-form-item input[type="text"] {
+.adult-count,
+.children-count {
   width: 116px;
   box-sizing: border-box;
-  padding: 10px 40px;
+ /* padding: 10px 40px;*/
+  padding-top: 10px;
+  padding-bottom: 10px;
   font: inherit;
   font-weight: bold;
   color: #000000;
   text-transform: uppercase;
+  text-align: center;
   background-color: #f2f2f2;
   border: none;
   position: relative;
@@ -436,19 +472,26 @@ fieldset {
 }
 .hotel {
   position: relative;
-
   padding-left: 30px;
-
   cursor: pointer;
 }
-.hotel input[type="checkbox"] + .checkbox-indicator {
+.hotel input[type="checkbox"]:checked + .checkbox-indicator {
   position: absolute;
   top: 0;
   left: 0;
-
-  width: 29px;
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  width: 27px;
   height: 27px;
-
+}
+.hotel input[type="checkbox"]:not(:checked) + .checkbox-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  width: 27px;
+  height: 27px;
 }
 .range {
   width: 330px;
@@ -706,3 +749,7 @@ fieldset {
   margin-left: auto;
   padding-right: 73px;
 }
+.hidden {
+  display: none;
+}
+
