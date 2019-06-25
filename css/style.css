@@ -4,7 +4,7 @@ padding: 0px;
 
 font-family: "PT-Sans", Arial, sans-serif;
 font-size: 14px;
-line-height: 21px;
+line-height: 26px;
 color: #333333;
 text-transform: uppercase;
 
@@ -46,7 +46,7 @@ a {
   
   font-size: 14px;
   font-weight: bold;
-  line-height: 21px;
+  line-height: 26px;
   color: #000000;
   background-color: #ffffff;
   display: flex;
@@ -76,14 +76,27 @@ ul.navigation-list  {
 
 .navigation-list-item {
   padding: 0 73px;
+    width: 150px;
 }
 
 .navigation-list-item.next-right {
   margin-right: auto;
+    width: 150px;
+    text-align: left;
+    padding: 0;
 }
 
 .navigation-list-item.prev-left {
   margin-left: auto;
+    width: 150px;
+    text-align: right;
+    padding: 0;
+}
+.navigation-list-item:first-child {
+    text-align: left;
+}
+.navigation-list-item:last-child {
+    text-align: right;
 }
 
 .main-navigation a {
@@ -121,7 +134,7 @@ span.visually-hidden  {
     background-image: url("../img/background_photo.png");
     background-repeat: no-repeat;
     background-position: top center;
-    background-color: #f2f2f2;
+    background-color: #a6e3e4;
     padding-top: 75px;
     margin-top: -55px;
 }
@@ -171,10 +184,8 @@ span.visually-hidden  {
   position: relative;
   left: 0;
   padding-bottom: 50px;
-    padding-top: 60px;
- margin-top: 0px
-
-
+    padding-top: 59px;
+    margin-top: -20px;
 }
 .introduse:before {
   content: "";
@@ -187,7 +198,10 @@ span.visually-hidden  {
   z-index: 10;
   top: -58px;
 }
-
+.introduse p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
 .reason-one {
   display: flex;
   margin: auto;
@@ -221,7 +235,7 @@ span.visually-hidden  {
   width: 172px;
   font-size: 21px;
   font-weight: bold;
-  line-height: 26px;
+  line-height: 21px;
   margin-bottom: 25px;
   vertical-align: middle;
   text-align: center;
@@ -243,7 +257,7 @@ span.visually-hidden  {
   justify-content: space-between;
   align-items: center;
   margin: auto;
-  padding-bottom: 80px;
+  padding-bottom: 55px;
   background-color: #ffffff;
 }
 .recomends-one,
@@ -280,7 +294,10 @@ span.visually-hidden  {
   padding-top: 0;
   box-sizing: border-box;
   margin-top: 15px;
-  
+}
+.reasons-list-item p {
+    margin-bottom: 0px;
+    margin-top: 0px;
 }
 .reasons-list-item:first-child {
   margin-left: 73px;
@@ -312,6 +329,9 @@ span.visually-hidden  {
   vertical-align: middle;
 }
 .block-callback h2 {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: bold;
   padding-top: 55px;
   padding-bottom: 35px;
   margin: 0;
@@ -320,7 +340,7 @@ span.visually-hidden  {
 .block-callback-info {
   width: 50%;
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 32px;
 }
 .search {
   z-index: 2;
@@ -341,19 +361,23 @@ span.visually-hidden  {
   overflow: hidden;
 }
 .button {
+    display: inline-block;
+    box-sizing: border-box;
+    padding-top: 30px;
   font: inherit;
   background-color: #766357;
   color: #ffffff;
   text-align: center;
-  vertical-align: middle;
   border: none;
   width: 575px;
   height: 86px;
   text-transform: uppercase;
   font-size: 21px;
   font-weight: bold;
+    line-height: 26px;
   cursor: pointer;
 }
+
 .button:hover {
   background-color: #604e43;
 }
@@ -367,12 +391,13 @@ span.visually-hidden  {
   font: inherit;
   font-size: 14px;
   font-weight: bold;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
   margin-top: 0;
+
 }
 .search-form-item label {
     display: inline-block;
-    width: 115px;
+    width: 114px;
     text-align: left;
 }
 
@@ -382,7 +407,7 @@ span.visually-hidden  {
 .search-form-item input:focus {
   background-color: #ffffff;
     outline: none;
-    border: 2px solid #e5e5e5;
+    border: 1px solid #e5e5e5;
 }
 .search-form-item input:-ms-input-placeholder  {
     color:#000000;
@@ -394,15 +419,15 @@ span.visually-hidden  {
 .date-input {
   width: 345px;
   box-sizing: border-box;
-  padding: 10px 15px;
+  padding: 5px 15px;
   padding-right: 30px;
   font: inherit;
   color: #000000;
   text-transform: uppercase;
   background-color: #f2f2f2;
-  border: none;
   position: relative;
     min-height: 41px;
+    border: 1px solid transparent;
 }
 .calendar {
   position: absolute;
@@ -426,12 +451,13 @@ span.visually-hidden  {
   width: 465px;
   margin: 0 auto;
   justify-content: space-between;
-  margin-bottom: 54px;
+  margin-bottom: 45px;
 }
 .count-form-item {
   position: relative;
     margin-top: 0;
     margin-bottom: 0;
+    border: 1px solid transparent;
 }
 .count-form-item input:-ms-input-placeholder  {
     color:#000000;
@@ -446,7 +472,7 @@ span.visually-hidden  {
 .count-form-item input:focus {
     background-color: #ffffff;
     outline: none;
-    border: 2px solid #e5e5e5;
+    border: 1px solid #e5e5e5;
 }
 
 .count-form-item label {
@@ -464,15 +490,15 @@ span.visually-hidden  {
   width: 116px;
   box-sizing: border-box;
  /* padding: 10px 40px;*/
-  padding-top: 10px;
-  padding-bottom: 10px;
+ /* padding-top: 10px;*/
+ /* padding-bottom: 10px;*/
   font: inherit;
   font-weight: bold;
   color: #000000;
   text-transform: uppercase;
   text-align: center;
   background-color: #f2f2f2;
-  border: none;
+    border: 1px solid transparent;
   position: relative;
     min-height: 41px;
 }
@@ -621,21 +647,22 @@ ul.footer-social {
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
-  width: 241px;
-  margin-left: 73px;
-    margin-top: 21px;
+  width: 190px;
+  margin-left: 130px;
+    margin-top: 10px;
     margin-bottom: 21px;
 }
 .footer-copyright {
   width: 241px;
   margin-right: 73px;
   display: flex;
-  padding-top: 14px;
+  padding-top: 0;
 }
 .academy-logo {
   margin-left: 20px;
   position: relative;
-  top: -14px;
+  top: -18px;
+    left: -6px;
 }
 .academy-logo:hover path{
   fill: #81b3d2;
@@ -656,16 +683,16 @@ ul.footer-social {
   background-image: url("../img/filter_background.jpg");
   background-repeat: no-repeat;
   background-position: top center;
-  background-color: #ffffff;
+  background-color: #6c8196;
   margin-top: 0;
   color: #ffffff;
 }
-fieldset {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  border: none; 
-}
+/*fieldset {*/
+/*  list-style: none;*/
+/*  padding: 0;*/
+/*  margin: 0;*/
+/*  border: none; */
+/*}*/
 .staff-name,
 .type-name {
   font-weight: 600;
@@ -693,14 +720,19 @@ fieldset {
 }
 .staff {
   width: 240px;  
-  margin-left: 73px;
-  margin-top: 30px;
+  margin-left: 60px;
+  margin-top: 17px;
   margin-bottom: 30px;
+    list-style: none;
+    border: none;
 }
 .hotel-type {
   width: 240px;
-  margin-top: 30px;
+  margin-top: 17px;
+    margin-right: 30px;
   margin-bottom: 30px;
+    list-style: none;
+    border: none;
 }
 .filter-options {
   padding-top: 20px;
@@ -728,16 +760,23 @@ fieldset {
   width: 27px;
   height: 27px;
 }
-.hotel input[type="checkbox"]:checked:disabled + .checkbox-indicator,
-.hotel input[type="checkbox"]:not(:checked):disabled + .checkbox-indicator {
+.hotel input[type="checkbox"]:checked:disabled + .checkbox-indicator {
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url("../img/checkbox-on.svg");
-  fill: #6a6a6a;
+  background-image: url("../img/checkbox-on-dis.svg");
   background-repeat: no-repeat;
   width: 27px;
   height: 27px;
+}
+.hotel input[type="checkbox"]:not(:checked):disabled + .checkbox-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("../img/checkbox-off-dis.svg");
+    background-repeat: no-repeat;
+    width: 27px;
+    height: 27px;
 }
 .range {
   width: 330px;
@@ -771,7 +810,7 @@ fieldset {
 .price-controls label {
   display: inline-block;
   font-size: 14px;
-  /*line-height: 38px;*/
+    line-height: 21px;
   /*vertical-align: top;*/
   cursor: pointer;
     margin-top: 5px;
@@ -848,7 +887,6 @@ fieldset {
 }
 .search-result-count {
   padding-top: 25px;
-  padding-bottom: 25px;
   display: inline-block;
   vertical-align: middle;
   font-size: 21px;
@@ -858,14 +896,14 @@ fieldset {
 }
 .search-result-bar {
   font-size: 12px;
-  line-height: 16px;
+  line-height: 18px;
   margin: 0;
-  margin-left: 45px;
+  margin-left: 32px;
   margin-right: 40px;
-  padding-top: 36px;
-  padding-bottom: 36px;
+  padding-top: 29px;
   vertical-align: middle;
   display: inline-block;
+    max-height: 78px;
 }
 .sorting {
   list-style: none;
@@ -875,9 +913,9 @@ fieldset {
 .sorting li {
   display: inline-block;
   vertical-align: middle;
-  padding: 36px 15px 36px 0;  
+  padding: 30px 15px 30px 0;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 18px;
   margin: 0;
 }
 .sorting a {
@@ -899,10 +937,12 @@ fieldset {
 .switch {
   margin-left: auto;
   width: 45px;
-  padding-top: 36px;
-  padding-bottom: 36px;
+  padding-top: 24px;
   display: flex;
   justify-content: space-between;
+}
+.switch-down {
+    padding-left: 10px;
 }
 .switch-down:hover path,
 .switch-up:hover path {
@@ -923,7 +963,7 @@ fieldset {
   justify-content: space-between;
   width: 1200px;
   margin: 0 auto;
-  padding: 28px 73px;
+  padding: 26px 73px;
   box-sizing: border-box;
   border-top: 2px solid #e5e5e5;
   background-color: #ffffff;
@@ -954,9 +994,9 @@ fieldset {
 .type,
 .price {
   display: inline-block;
-  padding-bottom: 15px;
-  padding-top: 15px;
-  padding-right: 40px;
+  padding-bottom: 11px;
+  padding-top: 0px;
+  padding-right: 0px;
   width: 114px;
   vertical-align: center;
 }
@@ -968,12 +1008,13 @@ fieldset {
 .button-more {
   display: inline-block;
   margin-right: 7px;
-  padding: 7px 16px;
+  padding: 5px 0px;
   width: 112px;
   box-sizing: content-box;
   font: inherit;
   font-weight: bold;
   font-size: 14px;
+    line-height: 21px;
   text-align: center;
   color: #ffffff;
   vertical-align: middle;
@@ -983,11 +1024,12 @@ fieldset {
 }
 .button-booking {
   display: inline-block;
-  padding: 7px 16px;
+  padding: 5px 0px;
   width: 144px;
   font: inherit;
   font-weight: bold;
   font-size: 14px;
+    line-height: 21px;
   text-align: center;
   color: #ffffff;
   vertical-align: middle;
@@ -995,12 +1037,12 @@ fieldset {
   background-color: #766357;
   border: none;
 }
-.button-more a,
-.button-booking a {
-  color: #ffffff;
-  font-size: 14px;
-  font-weight: bold;
-}
+/*.button-more a,*/
+/*.button-booking a {*/
+/*  color: #ffffff;*/
+/*  font-size: 14px;*/
+/*  font-weight: bold;*/
+/*}*/
 .button-more:hover {
   background-color: #669ec0;
 }
@@ -1018,7 +1060,6 @@ fieldset {
 .hotels-item-right {
   width: 115px;
   margin-left: auto;
-  padding-right: 73px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1027,11 +1068,10 @@ fieldset {
 .button-rating {
   display: block;
   width: 112px;
-  height: 31px;
+  height: 30px;
   background-color: #f2f2f2;
   text-align: center;
   vertical-align: middle;
-  padding-top: 5px;
   box-sizing: border-box;
 }
 .hidden {
@@ -1048,7 +1088,7 @@ fieldset {
 .form-animation {
   transition: max-height 5s;
   max-height: 0px;
-  padding: unset;
+  padding: 0px;
   overflow: hidden;
   -webkit-transition: max-height .5s, padding .5s;
   transition: max-height .5s, padding .5s;
@@ -1058,7 +1098,7 @@ fieldset {
   display: none;
   transition: 2s;
   position: absolute;
-  top: 295px;
+  top: 247px;
   left: 125px;
   color: #ff0000;
 }
